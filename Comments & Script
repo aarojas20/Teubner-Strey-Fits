@@ -1,6 +1,5 @@
 # Teubner-Strey-Fits
 # This script reads a .csv file containing x-ray scattering profiles and performs Teubner Strey-Fits given a temperature and sample name. 
-# Adriana A. Rojas
 # this code will use a robust linear-squares algorithm to fit a T-S fxn of the form y=1/(e*x**2+g) + 1/(a+b*x**2+c*x**4)to data
 #-------------------------------------------------------------------
 import matplotlib.pyplot as plt
@@ -89,7 +88,7 @@ def callfile(SampleName,temp):
     elif temp=='':
         print('enter a valid temperature')
     return q, Isaxs
-# ---------------------------------------------------------------------------------
+# ---------------------------------------------------------------
 newtemp='30'      # newtemp is the temperature I wish to analyze
 muestra='AAR3Mg'  # muestra is my sample name
 #
